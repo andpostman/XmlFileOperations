@@ -1,0 +1,21 @@
+server:
+  port: 8090
+spring:
+  artemis:
+    user: developer
+    password: developer
+    brokerUrl: tcp://localhost:61616
+
+jms:
+  queue:
+    destination:
+      error: ERROR
+      response: RESPONSE
+
+datasource:
+  xml:
+    write:
+      error:
+        path: "/output/error"
+      response:
+        path: "/output/response"
