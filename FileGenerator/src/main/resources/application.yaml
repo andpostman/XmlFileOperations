@@ -1,0 +1,7 @@
+server:
+  port: 8888
+file:
+  generate:
+    gen-source: "/read-gen/"
+    count: 10
+    capacity: 10
