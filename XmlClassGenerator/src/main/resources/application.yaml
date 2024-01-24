@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  artemis:
+    user: developer
+    password: developer
+    brokerUrl: tcp://localhost:61616
+jms:
+  queue:
+    destination: REQUEST
+file:
+  generate:
+    count: 1_000
+    capacity: 10
